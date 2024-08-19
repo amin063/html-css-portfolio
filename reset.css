@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+hr {
+    margin-block: 150px 80px;
+    border: 1px solid var(--main-color);
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin-block: 30px;
+}
+
+:root {
+    --bg-color: #151C25;
+    --main-color: #55E5A4;
+    --txt-color: #A9A9A9;
+}
