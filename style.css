@@ -27,7 +27,7 @@ i {
     cursor: pointer;
 }
 
-section {
+main{
     width: 90%;
     max-width: 1120px;
     margin: auto;
@@ -115,13 +115,16 @@ header {
 #about {
     display: grid;
     grid-template-columns: 1fr 0.2fr 1fr;
-
     .green-box img {
         height: 100vh;
     }
 
     .about-img {
         position: relative;
+        img {
+            width: 100%;
+            height: 100%;
+        }
     }
 
     .green-box {
@@ -143,7 +146,6 @@ header {
     .sub-h2 {
         font-size: 12px;
         position: relative;
-        left: 140px;
         color: var(--main-color);
     }
 
@@ -386,7 +388,7 @@ footer {
     margin-block-start: 70px;
     background-color: #26313F;
 
-    .container {
+    .items {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -440,8 +442,9 @@ footer {
 
 @media screen and (max-width:900px) {
     
-    section {
-        width: 100%;
+    main{
+        width: 70%;
+        margin: 0px;
     }
     header {
         margin-inline: 5px;
@@ -466,15 +469,13 @@ footer {
             }
         }
     }
-
     #about {
         display: flex;
         flex-direction: column-reverse;
         gap: 50px;
         .about-img {
             img {
-                width: 90%;
-                margin: auto;
+                width: 50%;
             }
         }
     }
