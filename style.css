@@ -14,6 +14,12 @@ body {
     color: black;
 }
 
+.container {
+    width: 80%;
+    margin: auto;
+    max-width: 1140px;
+}
+
 h3 {
     font-size: 43px;
 }
@@ -39,10 +45,12 @@ main{
 /* --- HEADER ---*/
 
 header {
+    width: 90%;
+    max-width: 1120px;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-inline: 100px;
     margin-block: 50px 120px;
 
     .links {
@@ -73,10 +81,7 @@ header {
 
 /* --- INTRO --- */
 #intro {
-    width: 80%;
-    max-width: 1120px;
-    margin-inline: auto;
-    align-items: center;
+    /* align-items: center; */
     display: grid;
     /* display: flex; */
     grid-template-columns: 1fr 0.2fr 1fr;
@@ -256,9 +261,6 @@ header {
 
 /* --- CONTACT --- */
 #contact {
-    width: 80%;
-    max-width: 1120px;
-    margin-inline: auto;
     text-align: center;
     p:nth-child(1) {
         font-weight: 600;
