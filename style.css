@@ -149,7 +149,7 @@ header {
 
     .sub-h2 {
         font-size: 12px;
-        position: relative;
+        /* position: relative; */
         color: var(--main-color);
     }
 
