@@ -18,6 +18,10 @@ body {
     width: 80%;
     margin: auto;
     max-width: 1140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
 
 h3 {
@@ -456,10 +460,7 @@ footer {
 
 @media screen and (max-width:900px) {
     
-    main{
-        width: 90%;
-        margin: auto;
-    }
+   
     header {
         margin-inline: 5px;
         .links,
