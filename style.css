@@ -15,13 +15,9 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     margin: auto;
     max-width: 1140px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
 }
 
 h3 {
@@ -121,31 +117,86 @@ header {
 /* --- ABOUT --- */
 
 #about {
+    display: flex;
+    gap: 20px;
+
+    .about-img {
+        position: relative;
+
+        img {
+            object-fit: cover;
+        }
+
+        &::after {
+            content: "";
+            width: 50%;
+            height: 90%;
+            z-index: -1;
+            background-color: var(--main-color);
+            position: absolute;
+            top: -20px;
+            left: -20px;
+        }
+    }
+
+    .about-me {
+        /* display: flex;
+        flex-direction: column;
+        gap: 25px; */
+        .sub-h2 {
+            font-size: 12px;
+            color: var(--main-color);
+        }
+        .about {
+            margin-block: 20px 40px;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 65px;
+        }
+        button {
+            border: 2px solid var(--main-color);
+            color: var(--main-color);
+            background-color: transparent;
+            padding: 10px 20px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+    
+        button:hover {
+            background-color: #55e5a421;
+        }
+    }
+}
+
+/* #about {
     display: grid;
-    grid-template-columns: 1fr 0.2fr 1fr;
+    grid-template-columns: 1fr 0.05fr 1fr;
     .green-box img {
         height: 100vh;
     }
 
     .about-img {
         position: relative;
+        height: 50%;
         img {
             width: 100%;
-            height: 100%;
             object-fit: cover;
         }
-    }
 
-    .green-box {
-        width: 50%;
-        height: 90%;
-        z-index: -1;
-        background-color: var(--main-color);
-        position: absolute;
-        top: -20px;
-        left: -20px;
+        &::after {
+            content: "";
+            width: 50%;
+            height: 90%;
+            z-index: -1;
+            background-color: var(--main-color);
+            position: absolute;
+            top: -20px;
+            left: -20px;
+        }
     }
-
     .about-me {
         grid-column: 3;
     }
@@ -154,7 +205,6 @@ header {
 
     .sub-h2 {
         font-size: 12px;
-        /* position: relative; */
         color: var(--main-color);
     }
 
@@ -181,7 +231,7 @@ header {
     button:hover {
         background-color: #55e5a421;
     }
-}
+} */
 
 /* --- PROJECTS --- */
 
@@ -486,13 +536,14 @@ footer {
     }
     #about {
         display: flex;
-        flex-direction: column-reverse;
-        gap: 50px;
+        flex-direction: column;
+
         .about-img {
             img {
                 width: 50%;
             }
         }
+      
     }
     .projects {
         gap: 20px;
