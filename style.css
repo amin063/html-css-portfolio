@@ -18,10 +18,7 @@ body {
     width: 80%;
     margin: auto;
     max-width: 1140px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+
 }
 
 h3 {
@@ -433,7 +430,7 @@ footer {
     }
 
     hr {
-        width: 100%;
+        width: 50%;
         border: 1px solid var(--txt-color);
         margin-block: 60px 40px;
     }
@@ -459,8 +456,6 @@ footer {
 }
 
 @media screen and (max-width:900px) {
-    
-   
     header {
         margin-inline: 5px;
         .links,
